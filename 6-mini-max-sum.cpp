@@ -1,15 +1,14 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
 vector<string> split_string(string);
 
 // Complete the miniMaxSum function below.
-void miniMaxSum(vector<int> arr) {
-int sum=0;
+void miniMaxSum(vector<long long int> arr) {
+long long int sum=0;
 sort(arr.begin(),arr.end());
-int max=accumulate(arr.begin()+1,arr.end(),sum);
-int min=accumulate(arr.begin(),arr.end()-1,sum);
+long long int max=accumulate(arr.begin()+1,arr.end(),sum);
+long long int min=accumulate(arr.begin(),arr.end()-1,sum);
 cout<<min<<" "<<max;
 }
 
@@ -20,10 +19,10 @@ int main()
 
     vector<string> arr_temp = split_string(arr_temp_temp);
 
-    vector<int> arr(5);
+    vector<long long int> arr(5);
 
     for (int i = 0; i < 5; i++) {
-        int arr_item = stoi(arr_temp[i]);
+        long long int arr_item = (long long int)stoll(arr_temp[i]);
 
         arr[i] = arr_item;
     }
