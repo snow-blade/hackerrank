@@ -1,4 +1,4 @@
-/* Note: i had to unlovk this problem's solution*/
+# Note: i had to unlovk this problem's solution*/
 def array2D(arr):
 
     # want to find the maximum hourglass sum
